@@ -1,6 +1,6 @@
 class Post
 
-  attr_accessor :title, :author
+  attr_accessor :title, :author, :name
 
   @@all = []
 
@@ -21,7 +21,7 @@ class Post
     if @author = nil
       return nil
     else
-      @author
+      @author.name
     end
   end
 end
