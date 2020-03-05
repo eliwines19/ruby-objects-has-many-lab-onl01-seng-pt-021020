@@ -6,7 +6,6 @@ class Post
 
   def initialize(title)
     @title = title
-    @name
     save
   end
 
@@ -19,7 +18,7 @@ class Post
   end
 
   def author_name
-    if @author = nil
+    if @author == nil
       return nil
     else
       @author.name
