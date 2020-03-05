@@ -4,10 +4,13 @@ class Song
 
   def initialize(name)
     @name = name
-    @@all << name
+    save
   end
 
-  def all
+  def save
+    @@all << self
+
+  def self.all
     @@all
   end
 end
